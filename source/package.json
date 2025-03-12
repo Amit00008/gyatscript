@@ -1,0 +1,22 @@
+{
+  "name": "gyatscript",
+  "version": "1.0.2",
+  "description": "A Tik-Tok Brainrot Scripting Language",
+  "main": "index.js",
+  "bin": {
+    "gyat": "./index.js"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "scripting",
+    "interpreter",
+    "custom-language"
+  ],
+  "author": "Amit",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
