@@ -6,6 +6,9 @@ const jetbrains = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jetbrai
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space' });
 
 export const metadata = {
+  icons: {
+    icon: "/favicon.ico",
+  },
   title: "Gyatscript",
   description: " gyatscript is a modern programming language that brings TikTok culture to coding. Built with ❤️ and memes.",
 };
