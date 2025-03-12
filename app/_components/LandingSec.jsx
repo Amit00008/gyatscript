@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import { Clipboard, Check, Github, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { VscVscode } from "react-icons/vsc";
+
 
 const LandingSec = () => {
   const [copied, setCopied] = useState(false);
@@ -96,6 +98,15 @@ const LandingSec = () => {
             >
               <Github size={24} />
               View Source
+            </a>
+
+            <a
+              href="https://marketplace.visualstudio.com/items?itemName=amitdev.gyat"
+              className="group flex items-center justify-center gap-3 bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white
+                px-6 py-4 sm:py-2.5 rounded-xl font-semibold transition-all duration-300 border border-gray-700/50 text-lg sm:text-base font-sans"
+            >
+              <VscVscode size={24} />
+              VsCode Extension
             </a>
           </motion.div>
         </div>
