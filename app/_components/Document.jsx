@@ -191,7 +191,7 @@ const DocumentationSec = () => {
             <button
               key={section.id}
               onClick={() => toggleSection(section.id)}
-              className={`p-3 rounded-lg transition-all duration-300 ${
+              className={`cursor-pointer p-3 rounded-lg transition-all duration-300 ${
                 openSection === section.id
                 ? "bg-blue-500 text-white shadow-lg scale-105"
                 : "bg-gray-800 text-gray-300 hover:bg-gray-700"
@@ -206,16 +206,16 @@ const DocumentationSec = () => {
         </div>
 
         {/* Documentation Sections */}
-        <div className="space-y-6">
+        <div className="space-y-6 cursor-pointer">
           {sections.map((section) => (
             <div
               key={section.id}
-              className={`transform transition-all duration-500 ease-in-out ${
+              className={`cursor-pointer transform transition-all duration-500 ease-in-out ${
                 openSection === section.id ? "opacity-100 translate-y-0" : "opacity-60 translate-y-4"
               }`}
             >
               <div 
-                className={`bg-gray-800/50 backdrop-blur rounded-xl shadow-lg border border-gray-700/50 overflow-hidden
+                className={`cursor-pointer bg-gray-800/50 backdrop-blur rounded-xl shadow-lg border border-gray-700/50 overflow-hidden
                   ${openSection === section.id ? "ring-2 ring-blue-500/50" : ""}`}
               >
                 <button

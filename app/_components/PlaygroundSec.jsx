@@ -94,16 +94,16 @@ duh sigma`);
               <div className="flex space-x-2">
                 <button
                   onClick={clearCode}
-                  className="flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-gray-800 hover:bg-gray-700 
+                  className="flex cursor-pointer items-center space-x-2 px-3 py-1.5 rounded-lg bg-gray-800 hover:bg-gray-700 
                     text-gray-300 hover:text-white transition-colors border border-gray-700"
                 >
                   <Trash2 size={16} />
-                  <span className="hidden sm:inline">Clear</span>
+                  <span className="hidden sm:inline cursor-pointer">Clear</span>
                 </button>
                 <button
                   onClick={runCode}
                   disabled={loading || !code.trim()}
-                  className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg transition-colors
+                  className={`cursor-pointer flex items-center space-x-2 px-3 py-1.5 rounded-lg transition-colors
                     ${loading || !code.trim()
                       ? "bg-gray-700 text-gray-400 cursor-not-allowed"
                       : "bg-blue-500 hover:bg-blue-600 text-white"
