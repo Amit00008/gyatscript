@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { tokenize } from "@/gyatscript/lexer";
-import { parse } from "@/gyatscript/parser";
-import { execute } from "@/gyatscript/interpreter";
+import { tokenize } from "@/scripts/lexer";
+import { parse } from "@/scripts/parser";
+import { execute } from "@/scripts/interpreter";
 
 export async function POST(req) {
     try {
